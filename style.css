@@ -1,0 +1,201 @@
+/**********************/
+/* General styling    */
+/**********************/
+body {
+  margin: 0px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: darkblue;
+}
+
+p, a, li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  text-decoration:solid;
+  color: rebeccapurple;
+
+}
+
+/* Flex CSS */
+
+/* CSS for header */
+.flex > header {
+  height: 100px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  background-color: #5c8096;
+  }
+  
+  /* CSS for header's child div */
+  .flex > header > div {
+  width: auto;
+  height: 90px;
+  flex-grow: 1;
+  }
+  
+  /* CSS for header's child div's child a tag */
+  .flex > header > div > a > img {
+  width: 10%;
+  height: 100%;
+  }
+  
+  /* CSS for navigation bar */
+  header nav ul {
+  display: flex;
+  list-style: none;
+  }
+  
+  header nav ul li {
+  padding: 0px 10px;
+  margin: 0px;
+  }
+  
+  /* CSS for first section */
+  .flex > main > div > section:first-child {
+  width: 195vh;
+  height: 100vh;
+  background-image: url("../IMAGES/PIZZA.webp");
+  background-size: cover;
+  }
+  
+  .flex > main > div > section:first-child > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  /* CSS for first section's child h1 tag */
+  .flex > main > div > section:first-child > div > h1 {
+  font-size: 3.5em;
+  color: #f4f4f4;
+  }
+  
+  /* CSS for search bar */
+  .enter {
+  display: flex;
+  width: 575px;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  input[type="text"] {
+  width: 358px;
+  height: 22px;
+  }
+  
+  .search {
+  display: flex;
+  align-items: center;
+  height: 25px;
+  padding: 1px;
+  width: 8%;
+  }
+  
+  /* CSS for html and body */
+  html, body {
+  height: 100%;
+  background-color: rgb(235, 249, 213);
+  }
+  
+  /* CSS for masthead and its child div */
+  .masthead > div {
+  padding: 1px;
+  }
+  
+  /* CSS for section's child h2 and h3 tags and their child form div */
+  section > div > h2,
+  section > div > h3 > form > div {
+  padding: 2%;
+  text-align: center;
+  }
+  
+  /* CSS for masthead's second and third section's child h2 and h3 tags */
+  .masthead > section:nth-child(2) > h2,
+  .masthead > section:nth-child(2) > h3 {
+  text-align: center;
+  font-size: 2em;
+  }
+  
+  /* CSS for all first four sections */
+  section:first-child,
+  section:nth-child(2) ,
+  section:nth-child(3),
+  section:nth-child(4) {
+  text-align: center;
+  background-color: rgb(235, 249, 213);
+  }
+  
+  /* CSS for masthead's third, fourth, fifth and sixth section's child h3 tags */
+  .masthead > section:nth-child(3) > h3,
+  .masthead > section:nth-child(4) > h3,
+  .masthead > section:nth-child(5) > h3,
+  .masthead > section:nth-child(6) > h3{
+  text-align: center;
+  font-size: 2em;
+  }
+  
+  /* CSS for main section */
+  main {
+  padding: 0%;
+  margin: 0%;
+  }
+
+/* Applies styles to the section with class "order" */
+.order{
+background-color: rgb(235, 249, 213);
+}
+
+/* Styles the h4 element inside the section with class "order" */
+.order> h4{
+font-size: 2em;
+text-align: center;
+}
+
+/* Applies flexbox styling to the div inside the section with class "order" */
+.order > div{
+display: flex;
+}
+
+/* Styles the h4 element inside any div inside a section */
+section div > h4 {
+background-color: rgb(235, 249, 213);
+text-align: center;
+font-size: 3.3em;
+}
+
+/* Applies flexbox styling to any unordered list inside a div inside a section */
+section div > ul {
+display: flex;
+align-items: center;
+background-color: rgb(235, 249, 213);
+color: red;
+list-style: none;
+flex-direction: column;
+}
+
+/* Applies styles to the footer element */
+footer {
+background-color: black;
+color: gold;
+display: flex;
+flex-direction: column;
+padding: 1px;
+}
+
+/* Styles the h5 element inside a div inside the footer */
+footer > div > h5 {
+text-align: center;
+font-size: 2em;
+}
+
+/* Styles the h6 element inside a div inside the footer */
+footer > div > h6 {
+text-align: center;
+}

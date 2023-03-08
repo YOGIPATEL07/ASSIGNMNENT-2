@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <title>
+      IND PIZZA
+    </title>
+    <meta name="description" content="an HTML page that contains a form that provides a variety of input options that will enable a user to place a pizza order.">
+    <meta name="robots" content="noindex, nofollow">
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Link to custom CSS file -->
+    <link rel="stylesheet" href="./style/style.css">
+  </head>
+  <body class="flex">
+    <header>
+      <!-- Logo section -->
+      <div>
+        <a href="index.html"><img src="./IMAGES/PIZZALOGO.png" alt="header logo"></a>
+      </div><!-- Navigation menu -->
+      <nav>
+        <ul>
+          <li>
+            <a href="#Contact1">CONTACT</a>
+          </li>
+          <li>
+            <a href="#MENU1">TODAY'S SPECIALS</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <section>
+          <!-- Pizza order form section -->
+          <div>
+            <h1>
+              BEGIN YOUR ORDER
+            </h1><!-- Search input field -->
+            <div class="enter">
+              <input type="text" placeholder="Type To Search Pizza">
+            </div><!-- Search button -->
+            <div class="search">
+              <button>Search</button>
+            </div>
+          </div>
+        </section>
+      </div><!-- Pizza options section -->
+      <section class="masthead" id="MENU1">
+        <form action="./php/pizza-file.php" method="post" enctype="multipart/form-data">
+          <div>
+            <h2>
+              OUR BEST SELLERS
+            </h2>
+            <h3>
+              TRY OUR 4 SPECIAL PIZZAS
+            </h3><!-- Pizza order form -->
+          </div><!-- Margherita pizza options -->
+          <section>
+            <h3>
+              MARGHERITA
+            </h3><a><img src="./IMAGES/MARGHERITA.jpg" alt="Margherita pizza"></a><br>
+            <!-- Radio buttons for pizza size -->
+             <label for="MARGHERITA"><input type="radio" id="MARGHERITA" name="lang" value="MARGHERITA"> MARGHERITA</label> <label for="quantity"><br>
+            (*max=10):</label> <!-- Quantity input field -->
+             <input type="number" id="quantity" name="quantity" min="1" max="10"> <!-- Submit button -->
+             <button>ENTER</button> <!-- Radio buttons for pizza size -->
+             <input type="radio" id="LARGE" name="v1" value="LARGE"> <label for="LARGE">LARGE</label> <input type="radio" id="MEDIUM" name="v1" value="MEDIUM"> <label for="MEDIUM">MEDIUM</label>
+            <input type="radio" id="SMALL" name="v1" value="SMALL"> <label for="SMALL">SMALL</label><br>
+            <h4>
+              TOPPINGS
+            </h4><!--Checkbox for extra cheese with label "EXTRA CHEESE"-->
+            <input type="checkbox" id="CHEESEEXTRA" name="TOPPINGS" value="TOPPINGS"> <label for="CHEESEEXTRA">EXTRA CHEESE</label><br>
+            <!--Checkbox for tomatoes with label "TOMATOES"-->
+             <input type="checkbox" id="tomatoes" name="TOPPINGS" value="TOPPINGS"> <label for="TOMATOES">TOMATOES</label><br>
+            <!--Checkbox for marinara sauce with label "MARINARA SAUCE"-->
+             <input type="checkbox" id="SAUCES" name="TOPPINGS" value="TOPPINGS"> <label for="SAUCES">MARINARA SAUCE</label><br>
+            <!--Paragraph describing the Margherita pizza and its toppings-->
+            <p>
+              <b>The mozzarella cheese used in a Margherita pizza is usually a high-quality, fresh cheese that is sliced and placed on top of the tomato sauce.<br>
+              The pizza is then finished off with a few fresh basil leaves and a drizzle of olive oil.<br>
+              Margherita pizza is often considered a true test of a pizzeria's quality, as it relies on the quality of its ingredients rather than the complexity of the toppings.<br>
+              Margherita pizza is an ideal option for those who prefer a lighter and more traditional pizza. It is also a great option for vegetarians, as it does not contain any meat.<br>
+              Overall, Margherita pizza is a classic and timeless option that is loved by pizza lovers around the world for its simple yet delicious flavor.</b>
+            </p>
+            <section>
+              <h3>
+                DOUBLE CHEESE
+              </h3><br>
+              <!--Image of a double cheese pizza-->
+               <img src="./IMAGES/DOUBLECHEESE.jpg" alt="A DOUBLE CHEESE PIZZA"><br>
+              <!--Radio button for selecting a double cheese pizza with label "DOUBLE CHEESE"-->
+               <input type="radio" id="DOUBLECHEESE" name="lang" value="DOUBLE CHEESE"> <label for="DOUBLECHEESE">DOUBLE CHEESE</label> <label for="quantity"><br>
+              (*max=10):</label> <!--Input field for specifying the quantity of pizzas to order with maximum limit of 10-->
+               <input type="number" id="Quantity" name="quantity" min="1" max="10"> <!--Button to submit the quantity-->
+               <button>ENTER</button> <!--Radio button for selecting a large size pizza with label "LARGE"-->
+               <input type="radio" id="LARG" name="L" value="LARGE"> <label for="LARGE">LARGE</label> <!--Radio button for selecting a medium size pizza with label "MEDIUM"-->
+               <input type="radio" id="MEDIU" name="L" value="MEDIUM"> <label for="MEDIUM">MEDIUM</label> <!--Radio button for selecting a small size pizza with label "SMALL"-->
+               <input type="radio" id="SMAL" name="L" value="SMALL"> <label for="SMALL">SMALL</label>
+              <h4>
+                TOPPINGS
+              </h4><!--Checkbox for mushrooms with label "MUSHROOM"-->
+              <input type="checkbox" id="MUSHROOM" name="TOPPINGS" value="TOPPINGS"> <label for="MUSHROOM">MUSHROOM</label><br>
+              <!--Checkbox for bacon with label "BACON"-->
+               <input type="checkbox" id="BACON" name="TOPPINGS" value="TOPPINGS"> <label for="BACON">BACON</label><br>
+              <input type="checkbox" id="GREENPEPPER" name="TOPPINGS" value="TOPPINGS"> <label for="GREENPEPPER">GREEN PEPPER</label><br>
+              <p>
+                <b>Double cheese pizza is a mouth-watering variety of pizza that is beloved by cheese lovers all around the world.<br>
+                As the name suggests, it contains a generous amount of cheese, more than what is typically found on a regular pizza.<br>
+                The pizza usually features a crispy crust that is topped with tomato sauce and two types of cheese<br>
+                Typically mozzarella and cheddar, but sometimes a variety of other cheeses are used as well.<br>
+                While it may not be the healthiest option, double cheese pizza is undeniably delicious and satisfying, making it a great comfort food for those who love cheese.<br>
+                It's the perfect choice for anyone looking to indulge in a cheesy, gooey, and delicious meal.</b>
+              </p>
+            </section>
+            <section>
+              <h3>
+                VEG PIZZA
+              </h3><br>
+              <!-- Image of VEG PIZZA -->
+               <img src="./IMAGES/VEGPIZZA.jpg" alt="VEG PIZZA"><br>
+              <!-- Radio button for VEG PIZZA -->
+               <input type="radio" id="VEGPIZZA" name="lang" value="VEG PIZZA"> <label for="VEGPIZZA">VEG PIZZA</label> <label for="quantity"><br>
+              (*max=10):</label> <!-- Input for quantity of VEG PIZZA -->
+               <input type="number" id="QUANTITY" name="quantity" min="1" max="10"> <button>ENTER</button> <!-- Radio buttons for pizza size -->
+               <input type="radio" id="L" name="M" value="LARGE"> <label for="LARGE">LARGE</label> <input type="radio" id="M" name="M" value="MEDIUM"><label for="MEDIUM">MEDIUM</label>
+              <input type="radio" id="S" name="M" value="SMALL"> <label for="SMALL">SMALL</label> <!-- Heading for toppings -->
+              <h4>
+                TOPPINGS
+              </h4><!-- Checkboxes for toppings -->
+              <input type="checkbox" id="EXTRACHEESE" name="TOPPINGS" value="TOPPINGS"> <label for="CHEESEEXTRA">EXTRA CHEESE</label><br>
+              <input type="checkbox" id="tomatoe" name="TOPPINGS" value="TOPPINGS"> <label for="TOMATOES">TOMATOES</label><br>
+              <input type="checkbox" id="SAUCE" name="TOPPINGS" value="TOPPINGS"> <label for="SAUCES">MARINARA SAUCE</label> <input type="checkbox" id="GREENPEPER" name="TOPPINGS" value="TOPPINGS"> <label for="GREENPEPER">GREEN PEPPER</label> <input type="checkbox" id="ONIONS" name="TOPPINGS" value="TOPPINGS"> <label for="ONIONS">ONIONS</label><br>
+              <!-- Description of VEG PIZZA -->
+              <p>
+                <b>Veg pizza, as the name suggests, is a pizza that is made without meat or animal products, making it a great option for vegetarians and vegans.<br>
+                Instead of meat toppings, veg pizza is typically topped with a variety of vegetables and sometimes<br>
+                The crust of a veg pizza can be thin or thick, and is usually made from a combination of flour, yeast, water, and salt.<br>
+                The tomato sauce used on the pizza is usually made with tomatoes, olive oil, and a blend of herbs and spices.<br>
+                Veg pizzas are often considered a healthier alternative to traditional pizzas, as they are lower in calories, fat, and cholesterol.<br>
+                They are also a great way to incorporate more vegetables into one's diet.</b>
+              </p>
+            </section><!-- Start of PEPPERONI section -->
+            <section>
+              <h3>
+                PEPPERONI
+              </h3><br>
+              <img src="./IMAGES/pepporoni.jpg" alt="PEPPERONI PIZZA"><br>
+              <input type="radio" id="PEPPERONI" name="lang" value="PEPPERONI"> <label for="PEPPERONI">PEPPERONI</label> <label for="quantity"><br>
+              (*max=10):</label> <input type="number" id="QUAntity" name="quantity" min="1" max="10"> <button>ENTER</button> <input type="radio" id="Large" name="S" value="LARGE"> <label for="LARGE">LARGE</label> <input type="radio" id="Medium" name="S" value="MEDIUM"> <label for="MEDIUM">MEDIUM</label> <input type="radio" id="Small" name="S" value="SMALL"> <label for="SMALL">SMALL</label>
+              <h4>
+                TOPPINGS
+              </h4><input type="checkbox" id="GreenPepper" name="TOPPINGS" value="TOPPINGS"> <label for="GreenPepper">GREEN PEPPER</label><br>
+              <input type="checkbox" id="TOMATOES" name="TOPPINGS" value="TOPPINGS"> <label for="TOMATOES">TOMATOES</label><br>
+              <input type="checkbox" id="sauce" name="TOPPINGS" value="TOPPINGS"> <label for="SAUCES">MARINARA SAUCE</label><br>
+              <p>
+                <b>Pepperoni pizza is a popular and classic variety of pizza that is loved by many around the world.<br>
+                It typically consists of a thin or thick crust that is topped with tomato sauce, shredded mozzarella cheese, and slices of pepperoni sausage.<br>
+                The pepperoni used in the pizza is a type of cured sausage made from beef and pork, which is seasoned with various spices, including paprika, garlic, and fennel seeds.<br>
+                The slices of pepperoni are often placed in a circular pattern on top of the cheese, and the pizza is then baked in a hot oven until the crust is golden brown.<br>
+                Overall, pepperoni pizza is a classic and delicious option that is loved by pizza lovers all over the world.</b>
+              </p>
+            </section>
+            <!-- class to define online orders -->
+            <section class="order">
+              <h4>
+                ORDER ONLINE
+              </h4>
+              <div>
+                <label for="address">FIRST NAME-</label> <input type="text" name="fname" placeholder="Enter First Name"> <label for="address">SECOND NAME</label> <input type="text" name="lname" placeholder="Enter Last Name">
+              </div><br>
+              <div>
+                <label for="address">ADDRESS-</label> <input type="text" id="address" placeholder="ENTER YOUR ADDRESS">
+              </div><br>
+              <div>
+                <label for="address">YOUR EMAIL-</label><input type="email" placeholder="Your Email">
+              </div><br>
+              <div>
+                <label for="address">YOUR NUMBER-</label> <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="ENTER YOR PHONE NUMBER">
+              </div><br>
+              <div>
+                <input type="submit" id="FINISH">
+              </div>
+            </section>
+          </section>
+        </form>
+      </section>
+    </main>
+    
+    <!-- section for opening times -->
+    <section>
+      <div>
+        <h3>
+          OPENING TIMES
+        </h3>
+        <ul>
+          <li>MONDAY 8am-10pm
+          </li>
+          <li>TUESDAY 8am-10pm
+          </li>
+          <li>WEDNESDAY 8am-10pm
+          </li>
+          <li>THURSDAY 8am-10pm
+          </li>
+          <li>FRIDAY 8am-10pm
+          </li>
+          <li>SATURDAY 8am-10pm
+          </li>
+          <li>SUNDAY 9am-8pm
+          </li>
+        </ul>
+      </div>
+    </section><!-- footer of the html -->
+    <footer id="Contact1">
+      <div>
+        <h5>
+          CONTACT US
+        </h5>
+        <p>
+          Email id-indpizza@gmail.com
+        </p>
+        <p>
+          Contact number:123-444-9999
+        </p>
+        <p>
+          <label for="feedback">Customer feedback</label> <input type="text" id="feedback" placeholder="Input your feedback here..."> <button>ENTER</button>
+        </p>
+        <h6>
+          THIS IS A COPYRIGHTED © SITE V.2023
+        </h6>
+      </div>
+    </footer>
+  </body>
+</html>
